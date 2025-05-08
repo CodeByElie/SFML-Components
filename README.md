@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # SFML Components Library
 
 This project aims to create a comprehensive library of reusable components for **SFML (Simple and Fast Multimedia Library)**. The goal is to provide developers with a collection of pre-built, modular, and easy-to-use components to accelerate the development of SFML-based applications and games.
