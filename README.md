@@ -42,7 +42,7 @@ Box box({
     .width = width,
     .height = height,
     .fillColor = color,
-    .borerRadius = radius
+    .borderRadius = radius
 })
 ```
 
