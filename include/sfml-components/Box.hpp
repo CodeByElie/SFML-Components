@@ -8,6 +8,10 @@
 class Box : public sf::Drawable
 {
 public:
+    /**
+     * Constructor for Box class
+     * @param parameters the parameters
+     */
     Box(const PARAMETERS &parameters);
 
     /**

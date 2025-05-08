@@ -29,7 +29,7 @@ void Box::draw(sf::RenderTarget &target, sf::RenderStates states) const
     for (auto coords : std::vector<sf::Vector2f>{sf::Vector2f(position.x, position.y), sf::Vector2f(position.x + width - borderRadius * 2, position.y), sf::Vector2f(position.x, position.y + height - borderRadius * 2), sf::Vector2f(position.x + width - borderRadius * 2, position.y + height - borderRadius * 2)})
     {
         circle.setPosition(coords);
-        target.draw(circle);
+        target.draw(circle, states);
     }
 }
 
