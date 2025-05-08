@@ -9,7 +9,7 @@ This project aims to create a comprehensive library of reusable components for *
 - Easy integration with existing SFML projects.
 - Well-documented examples and usage guides.
 
-##Examples
+## Examples
 
 Without SFML-Components :
 
@@ -34,7 +34,7 @@ Without SFML-Components :
     }
 ```
 
-Width SFML-Components :
+With SFML-Components :
 
 ```
 Box box({
