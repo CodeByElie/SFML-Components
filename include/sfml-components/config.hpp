@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include <string>
 
 const sf::Color backgroundColor(255, 205, 178);
 const sf::Color primaryColor(255, 180, 162);
@@ -19,6 +20,7 @@ struct PARAMETERS
     sf::Color color = textColor;
     sf::Font font;
     int fontSize = 24;
+    std::string text;
 };
 
 #endif

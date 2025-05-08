@@ -4,6 +4,7 @@
 #include "config.hpp"
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include <string>
 
 class Text : public sf::Drawable
 {
@@ -37,13 +38,10 @@ public:
      */
     int getHeight() const;
 
-
 private:
     sf::Vector2f position;
-    int width;
-    int height;
-    int borderRadius;
-    sf::Color fillColor;
+    sf::Color color;
+    string text;
 
     virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 };
