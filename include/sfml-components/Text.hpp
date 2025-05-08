@@ -9,6 +9,10 @@
 class Text : public sf::Drawable
 {
 public:
+    /**
+     * Constructor for Text class
+     * @param parameters the parameters
+     */
     Text(const PARAMETERS &parameters);
 
     /**
@@ -41,7 +45,9 @@ public:
 private:
     sf::Vector2f position;
     sf::Color color;
-    string text;
+    std::string text;
+    sf::Font font;
+    int fontSize;
 
     virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 };
