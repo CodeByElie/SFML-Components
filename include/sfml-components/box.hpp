@@ -18,11 +18,23 @@ public:
     sf::Vector2f getPosition() const;
 
     /**
+     * Set the position of the box
+     * @param newPosition the new position of the box
+     */
+    void setPosition(const sf::Vector2f &newPosition);
+
+    /**
      * Get the width of the box
      *
      * @return the width of the box
      */
     int getWidth() const;
+
+    /**
+     * Set the width of the box
+     * @param newWidth the new width of the box
+     */
+    void setWidth(const int &newWidth);
 
     /**
      * Get the height of the box
@@ -31,14 +43,18 @@ public:
      */
     int getHeight() const;
 
+    /**
+     * Set the height of the box
+     * @param newHeight the new height of the box
+     */
+    void setHeight(const int &newHeight);
+
 private:
     sf::Vector2f position;
     int width;
     int height;
     int borderRadius;
-    int padding;
     sf::Color fillColor;
-    std::vector<sf::Drawable> children;
 
     virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 };

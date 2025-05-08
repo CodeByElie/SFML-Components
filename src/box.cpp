@@ -1,7 +1,7 @@
-#include "../include/sfml-components/box.hpp"
-#include <SFML/GpuPreference.hpp>
+#include "../include/sfml-components/Box.hpp"
+#include <SFML/Graphics.hpp>
 
-Box::Box(const PARAMETERS &parameters) : position{parameters.position}, width{parameters.width}, height{parameters.height}, borderRadius{parameters.borderRadius}, fillColor{parameters.fillColor}, children{children}
+Box::Box(const PARAMETERS &parameters) : position{parameters.position}, width{parameters.width}, height{parameters.height}, borderRadius{parameters.borderRadius}, fillColor{parameters.fillColor}
 {
     if (width <= 0)
         throw std::invalid_argument("Box constructor error: 'width' must be strictly positive (got " + std::to_string(width) + ")");
@@ -34,5 +34,10 @@ void Box::draw(sf::RenderTarget &target, sf::RenderStates states) const
 }
 
 sf::Vector2f Box::getPosition() const { return position; }
+void Box::setPosition(const sf::Vector2f &newPosition) { position = newPosition; }
+
 int Box::getWidth() const { return width; }
+void Box::setWidth(const int &newWidth) { width = newWidth; }
+
 int Box::getHeight() const { return height; }
+void Box::setHeight(const int &newHeight) { height = newHeight; }
