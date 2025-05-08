@@ -15,9 +15,10 @@ struct PARAMETERS
     int width;
     int height;
     int borderRadius;
-    int padding;
     sf::Color fillColor = primaryColor;
-    std::vector<sf::Drawable> children;
+    sf::Color color = textColor;
+    sf::Font font;
+    int fontSize = 24;
 };
 
 #endif

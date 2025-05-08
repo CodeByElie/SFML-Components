@@ -1,22 +1,16 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "./include/sfml-components/config.hpp"
-#include "./include/sfml-components/box.hpp"
+#include "./include/sfml-components/Box.hpp"
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode({900, 700}), "App");
     Box box1({
-        .position = {50, 100},
-        .width = 200,
+        .position = {100, 100},
+        .width = 700,
         .height = 200,
-        .borderRadius = 20,
-    });
-    Box header({
-        .position = {0, 0},
-        .width = 900,
-        .height = 50,
-        .fillColor = secondaryColor
+        .borderRadius = 50,
     });
 
     while (window.isOpen())
@@ -28,7 +22,6 @@ int main()
         }
         window.clear(backgroundColor);
         window.draw(box1);
-        window.draw(header);
         window.display();
     }
 
