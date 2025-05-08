@@ -42,6 +42,12 @@ public:
      */
     int getHeight() const;
 
+    /**
+     * Set the text
+     * @param newText the new text 
+     */
+    void setText(const std::string &newText);
+
 private:
     sf::Vector2f position;
     sf::Color color;

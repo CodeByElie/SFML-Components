@@ -17,6 +17,7 @@ public:
     void add(const sf::Drawable &widget);
 
     void run();
+    void run(void (*loop)(void));
 
 private:
     sf::RenderWindow window;

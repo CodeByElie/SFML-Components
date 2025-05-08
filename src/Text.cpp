@@ -14,3 +14,8 @@ void Text::draw(sf::RenderTarget &target, sf::RenderStates states) const
     textSF.setFillColor(color);
     target.draw(textSF, states);
 }
+
+void Text::setText(const std::string &newText)
+{
+    text = newText;
+}

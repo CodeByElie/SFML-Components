@@ -20,7 +20,6 @@ int main()
                .fontSize = 24,
                .font = sf::Font{"./assets/fonts/arial/ARIALI.TTF"},
                .position = {150, 150}});
-
     window.add(box);
     window.add(text);
     window.run();

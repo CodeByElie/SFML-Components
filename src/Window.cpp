@@ -20,7 +20,27 @@ void Window::run()
                 window.close();
         }
         window.clear(backgroundColor);
-        for(const auto &widget:widgets) {
+        for (const auto &widget : widgets)
+        {
+            window.draw(*widget);
+        }
+        window.display();
+    }
+}
+
+void Window::run(void (*loop)(void))
+{
+    while (window.isOpen())
+    {
+        while (const std::optional event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
+        window.clear(backgroundColor);
+        loop();
+        for (const auto &widget : widgets)
+        {
             window.draw(*widget);
         }
         window.display();
