@@ -55,8 +55,8 @@ public:
 
 private:
     sf::Vector2f position;
-    int width;
-    int height;
+    unsigned int width;
+    unsigned int height;
     int borderRadius;
     sf::Color fillColor;
 
